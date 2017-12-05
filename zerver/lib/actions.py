@@ -1639,7 +1639,8 @@ def check_send_message(sender, client, message_type_name, message_to,
         message_type_name,
         message_to,
         topic_name)
-
+    if message_content=="welcome":
+       print("Welcome to Zulip :octopus:")
     message = check_message(sender, client, addressee,
                             message_content, realm, forged, forged_timestamp,
                             forwarder_user_profile, local_id, sender_queue_id)
